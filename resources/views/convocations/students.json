@@ -1,0 +1,832 @@
+﻿{
+  "students": [
+    {
+      "student_code": "001",
+      "full_name": "MUSTAPHA LAKRIMI",
+      "class_name": "A1",
+      "reference": "1"
+    },
+    {
+      "student_code": "002",
+      "full_name": "YOUSSEF OUGGOUNE",
+      "class_name": "A1",
+      "reference": "2"
+    },
+    {
+      "student_code": "003",
+      "full_name": "SARA LAIRANI",
+      "class_name": "A1",
+      "reference": "3"
+    },
+    {
+      "student_code": "004",
+      "full_name": "JAMAL BEN DAOUD",
+      "class_name": "A1",
+      "reference": "4"
+    },
+    {
+      "student_code": "005",
+      "full_name": "OTHMAN ENAAMA",
+      "class_name": "A1",
+      "reference": "5"
+    },
+    {
+      "student_code": "006",
+      "full_name": "KAOUTAR LABRIGUI",
+      "class_name": "A1",
+      "reference": "6"
+    },
+    {
+      "student_code": "007",
+      "full_name": "FATIMA CHAMSAOUI",
+      "class_name": "A1",
+      "reference": "7"
+    },
+    {
+      "student_code": "008",
+      "full_name": "ZAKARIA BABIH",
+      "class_name": "A1",
+      "reference": "8"
+    },
+    {
+      "student_code": "009",
+      "full_name": "ACHRAF HSSINI",
+      "class_name": "A1",
+      "reference": "9"
+    },
+    {
+      "student_code": "010",
+      "full_name": "HOUDA OUAHMANE",
+      "class_name": "A1",
+      "reference": "10"
+    },
+    {
+      "student_code": "011",
+      "full_name": "MEHDI BOULFANID",
+      "class_name": "A1",
+      "reference": "11"
+    },
+    {
+      "student_code": "012",
+      "full_name": "NAIMA ELATTARI",
+      "class_name": "A1",
+      "reference": "12"
+    },
+    {
+      "student_code": "013",
+      "full_name": "BILAL AOUFY",
+      "class_name": "A1",
+      "reference": "13"
+    },
+    {
+      "student_code": "014",
+      "full_name": "OUMAIMA EL KHOURI",
+      "class_name": "A1",
+      "reference": "14"
+    },
+    {
+      "student_code": "015",
+      "full_name": "MOHAMED-AMINE LQATI",
+      "class_name": "A1",
+      "reference": "15"
+    },
+    {
+      "student_code": "016",
+      "full_name": "HAYTAM SANGOU",
+      "class_name": "A1",
+      "reference": "16"
+    },
+    {
+      "student_code": "017",
+      "full_name": "DOHA ELHADNI",
+      "class_name": "A1",
+      "reference": "17"
+    },
+    {
+      "student_code": "018",
+      "full_name": "OMAR BELCADI",
+      "class_name": "A1",
+      "reference": "18"
+    },
+    {
+      "student_code": "019",
+      "full_name": "CHAIMA OUHMAD",
+      "class_name": "A1",
+      "reference": "19"
+    },
+    {
+      "student_code": "020",
+      "full_name": "MEHDI AKARROUM",
+      "class_name": "A1",
+      "reference": "20"
+    },
+    {
+      "student_code": "021",
+      "full_name": "MOHAMED RATMI",
+      "class_name": "A1",
+      "reference": "21"
+    },
+    {
+      "student_code": "022",
+      "full_name": "HIBA AIT SAID",
+      "class_name": "A1",
+      "reference": "22"
+    },
+    {
+      "student_code": "023",
+      "full_name": "HASSAN ISKRANE",
+      "class_name": "A1",
+      "reference": "23"
+    },
+    {
+      "student_code": "024",
+      "full_name": "YAHYA BOUHZEM",
+      "class_name": "A1",
+      "reference": "24"
+    },
+    {
+      "student_code": "025",
+      "full_name": "ADIL AIT ELQADI",
+      "class_name": "A1",
+      "reference": "25"
+    },
+    {
+      "student_code": "026",
+      "full_name": "JIHANE TILSANE",
+      "class_name": "A1",
+      "reference": "26"
+    },
+    {
+      "student_code": "027",
+      "full_name": "SALMA BEN CHEIKH",
+      "class_name": "A1",
+      "reference": "27"
+    },
+    {
+      "student_code": "028",
+      "full_name": "MALAK BOUZI",
+      "class_name": "A1",
+      "reference": "28"
+    },
+    {
+      "student_code": "029",
+      "full_name": "AMINE CHERKAOUI",
+      "class_name": "A1",
+      "reference": "29"
+    },
+    {
+      "student_code": "030",
+      "full_name": "YASMINA BOUKHALED",
+      "class_name": "A1",
+      "reference": "30"
+    },
+    {
+      "student_code": "031",
+      "full_name": "ABDELADIM LAGHDACH",
+      "class_name": "A1",
+      "reference": "31"
+    },
+    {
+      "student_code": "032",
+      "full_name": "TAMIM SKIOUS",
+      "class_name": "A1",
+      "reference": "32"
+    },
+    {
+      "student_code": "033",
+      "full_name": "YASSINE OULKAID",
+      "class_name": "A1",
+      "reference": "33"
+    },
+    {
+      "student_code": "034",
+      "full_name": "AYMANE AIT SALEM",
+      "class_name": "A1",
+      "reference": "34"
+    },
+    {
+      "student_code": "035",
+      "full_name": "SOUFIANE BOUGHOULID",
+      "class_name": "A1",
+      "reference": "35"
+    },
+    {
+      "student_code": "036",
+      "full_name": "YOUSSEF ENNADIFI",
+      "class_name": "A2",
+      "reference": "36"
+    },
+    {
+      "student_code": "037",
+      "full_name": "CHAIMA ERRAHIB",
+      "class_name": "A2",
+      "reference": "37"
+    },
+    {
+      "student_code": "038",
+      "full_name": "FATIMA EZZAHRA AKDIM",
+      "class_name": "A2",
+      "reference": "38"
+    },
+    {
+      "student_code": "039",
+      "full_name": "HASSAN OUSSAYD",
+      "class_name": "A2",
+      "reference": "39"
+    },
+    {
+      "student_code": "040",
+      "full_name": "REDA NABBAD",
+      "class_name": "A2",
+      "reference": "40"
+    },
+    {
+      "student_code": "041",
+      "full_name": "MERYEM AITBENARROU",
+      "class_name": "A2",
+      "reference": "41"
+    },
+    {
+      "student_code": "042",
+      "full_name": "ANAS KANNAOU",
+      "class_name": "A2",
+      "reference": "42"
+    },
+    {
+      "student_code": "043",
+      "full_name": "OUMNIA ES-SEMMAMI",
+      "class_name": "A2",
+      "reference": "43"
+    },
+    {
+      "student_code": "044",
+      "full_name": "ZOUHAIR GHANIM",
+      "class_name": "A2",
+      "reference": "44"
+    },
+    {
+      "student_code": "045",
+      "full_name": "SALAH EDDINE SIDI HIDA",
+      "class_name": "A2",
+      "reference": "45"
+    },
+    {
+      "student_code": "046",
+      "full_name": "MOHAMED OUASSI-AKKAR",
+      "class_name": "A2",
+      "reference": "46"
+    },
+    {
+      "student_code": "047",
+      "full_name": "FADOUA ROKNEDDINE",
+      "class_name": "A2",
+      "reference": "47"
+    },
+    {
+      "student_code": "048",
+      "full_name": "MOHAMED TOUKRAM",
+      "class_name": "A2",
+      "reference": "48"
+    },
+    {
+      "student_code": "049",
+      "full_name": "AYA EL OUKEILY",
+      "class_name": "A2",
+      "reference": "49"
+    },
+    {
+      "student_code": "050",
+      "full_name": "SALMA MINSAD",
+      "class_name": "A2",
+      "reference": "50"
+    },
+    {
+      "student_code": "051",
+      "full_name": "AHMED AMIMI",
+      "class_name": "A2",
+      "reference": "51"
+    },
+    {
+      "student_code": "052",
+      "full_name": "MALAK AAMMOUCH",
+      "class_name": "A2",
+      "reference": "52"
+    },
+    {
+      "student_code": "053",
+      "full_name": "YAHYA BOUZEKRI",
+      "class_name": "A2",
+      "reference": "53"
+    },
+    {
+      "student_code": "054",
+      "full_name": "YOUNESS OUJAA",
+      "class_name": "A3",
+      "reference": "54"
+    },
+    {
+      "student_code": "055",
+      "full_name": "LMEHDI HOUMIA",
+      "class_name": "A3",
+      "reference": "55"
+    },
+    {
+      "student_code": "056",
+      "full_name": "SAAD HACHIM SAADOUNI",
+      "class_name": "A3",
+      "reference": "56"
+    },
+    {
+      "student_code": "057",
+      "full_name": "MAHA EL ALAMI",
+      "class_name": "A3",
+      "reference": "57"
+    },
+    {
+      "student_code": "058",
+      "full_name": "SALMA RAHLAOUI",
+      "class_name": "A3",
+      "reference": "58"
+    },
+    {
+      "student_code": "059",
+      "full_name": "AYOUB ELHANSALI",
+      "class_name": "A3",
+      "reference": "59"
+    },
+    {
+      "student_code": "060",
+      "full_name": "YASSAMINE OUNDA",
+      "class_name": "A3",
+      "reference": "60"
+    },
+    {
+      "student_code": "061",
+      "full_name": "YOUNES HAMDANIA",
+      "class_name": "A3",
+      "reference": "61"
+    },
+    {
+      "student_code": "062",
+      "full_name": "ASMAA NAJACHI",
+      "class_name": "A3",
+      "reference": "62"
+    },
+    {
+      "student_code": "063",
+      "full_name": "ANAS HIND",
+      "class_name": "A3",
+      "reference": "63"
+    },
+    {
+      "student_code": "064",
+      "full_name": "ADNANE BOULFRIFI",
+      "class_name": "A3",
+      "reference": "64"
+    },
+    {
+      "student_code": "065",
+      "full_name": "ZAKARIA MAHFOUDI",
+      "class_name": "A3",
+      "reference": "65"
+    },
+    {
+      "student_code": "066",
+      "full_name": "YAHYA ELAZZAOUI",
+      "class_name": "A3",
+      "reference": "66"
+    },
+    {
+      "student_code": "067",
+      "full_name": "DRISS EL AZALI",
+      "class_name": "A3",
+      "reference": "67"
+    },
+    {
+      "student_code": "068",
+      "full_name": "AYOUB EL FAIDA",
+      "class_name": "A3",
+      "reference": "68"
+    },
+    {
+      "student_code": "069",
+      "full_name": "MOHAMED ALI SOUARAT",
+      "class_name": "A3",
+      "reference": "69"
+    },
+    {
+      "student_code": "070",
+      "full_name": "SALMA ELKATANI",
+      "class_name": "A3",
+      "reference": "70"
+    },
+    {
+      "student_code": "071",
+      "full_name": "KOSSAY AMARAY",
+      "class_name": "A3",
+      "reference": "71"
+    },
+    {
+      "student_code": "072",
+      "full_name": "ACHRAF AIT IYAD",
+      "class_name": "A3",
+      "reference": "72"
+    },
+    {
+      "student_code": "073",
+      "full_name": "NISSRINE NAFIA",
+      "class_name": "A3",
+      "reference": "73"
+    },
+    {
+      "student_code": "074",
+      "full_name": "REDA EL KADI",
+      "class_name": " DARMSTADT",
+      "reference": "74"
+    },
+    {
+      "student_code": "075",
+      "full_name": "YAHIA EL GUEDDAR",
+      "class_name": "DARMSTADT",
+      "reference": "75"
+    },
+    {
+      "student_code": "076",
+      "full_name": "ZAKARIA BENSASSI",
+      "class_name": "DARMSTADT",
+      "reference": "76"
+    },
+    {
+      "student_code": "077",
+      "full_name": "HIBA BENFATHALLAH",
+      "class_name": "DARMSTADT",
+      "reference": "77"
+    },
+    {
+      "student_code": "078",
+      "full_name": "MOHAMED ID MANSOUR",
+      "class_name": "DARMSTADT",
+      "reference": "78"
+    },
+    {
+      "student_code": "079",
+      "full_name": "MALIKA TAFROUNAST",
+      "class_name": "DARMSTADT",
+      "reference": "79"
+    },
+    {
+      "student_code": "080",
+      "full_name": "LMEHDI BOUCHIHA",
+      "class_name": "DARMSTADT",
+      "reference": "80"
+    },
+    {
+      "student_code": "081",
+      "full_name": "ABDELHAKIM AFERYAD",
+      "class_name": "DARMSTADT",
+      "reference": "81"
+    },
+    {
+      "student_code": "082",
+      "full_name": "YAHYA BEHBAHI",
+      "class_name": "DARMSTADT",
+      "reference": "82"
+    },
+    {
+      "student_code": "083",
+      "full_name": "SALMA AIT-ZAOUIAT",
+      "class_name": "DARMSTADT",
+      "reference": "83"
+    },
+    {
+      "student_code": "084",
+      "full_name": "KHADIJA EDDARDAK",
+      "class_name": "DARMSTADT",
+      "reference": "84"
+    },
+    {
+      "student_code": "085",
+      "full_name": "ABDESSAMAD ZOUHAIDI",
+      "class_name": "DARMSTADT",
+      "reference": "85"
+    },
+    {
+      "student_code": "086",
+      "full_name": "OTHMANE FASSIH",
+      "class_name": "DARMSTADT",
+      "reference": "86"
+    },
+    {
+      "student_code": "087",
+      "full_name": "KAWTAR LAGRAOUI",
+      "class_name": "DARMSTADT",
+      "reference": "87"
+    },
+    {
+      "student_code": "088",
+      "full_name": "JAAFAR BENKHILOUQ",
+      "class_name": "DARMSTADT",
+      "reference": "88"
+    },
+    {
+      "student_code": "089",
+      "full_name": "MOUNA BOUTABAA",
+      "class_name": "DARMSTADT",
+      "reference": "89"
+    },
+    {
+      "student_code": "090",
+      "full_name": "RAZANE ZOUINE",
+      "class_name": "DARMSTADT",
+      "reference": "90"
+    },
+    {
+      "student_code": "091",
+      "full_name": "AMINE BAHASSOU",
+      "class_name": "DARMSTADT",
+      "reference": "91"
+    },
+    {
+      "student_code": "092",
+      "full_name": "CHAIMAE CHAIB",
+      "class_name": "DARMSTADT",
+      "reference": "92"
+    },
+    {
+      "student_code": "093",
+      "full_name": "NASSEREDDINE BENLMESIEH",
+      "class_name": "DARMSTADT",
+      "reference": "93"
+    },
+    {
+      "student_code": "094",
+      "full_name": "AYOUB AIT HAMMOU",
+      "class_name": "DARMSTADT",
+      "reference": "94"
+    },
+    {
+      "student_code": "095",
+      "full_name": "IBTISSAM LAMHAMDI",
+      "class_name": "DARMSTADT",
+      "reference": "95"
+    },
+    {
+      "student_code": "096",
+      "full_name": "AYA OUHAMMOU",
+      "class_name": "WUPPERTAL",
+      "reference": "96"
+    },
+    {
+      "student_code": "097",
+      "full_name": "AYA EZZAOUIA",
+      "class_name": "WUPPERTAL",
+      "reference": "97"
+    },
+    {
+      "student_code": "098",
+      "full_name": "AYA GEMMAOUI",
+      "class_name": "WUPPERTAL",
+      "reference": "98"
+    },
+    {
+      "student_code": "099",
+      "full_name": "HAMZA EL ADEL",
+      "class_name": "WUPPERTAL",
+      "reference": "99"
+    },
+    {
+      "student_code": "100",
+      "full_name": "MOUAD KSIKES",
+      "class_name": "WUPPERTAL",
+      "reference": "100"
+    },
+    {
+      "student_code": "101",
+      "full_name": "MERIEM BOUJERRAR",
+      "class_name": "WUPPERTAL",
+      "reference": "101"
+    },
+    {
+      "student_code": "102",
+      "full_name": "HADIR AMAADOUUR",
+      "class_name": "WUPPERTAL",
+      "reference": "102"
+    },
+    {
+      "student_code": "103",
+      "full_name": "ABDELBARI RABI",
+      "class_name": "WUPPERTAL",
+      "reference": "103"
+    },
+    {
+      "student_code": "104",
+      "full_name": "AYA FALLE",
+      "class_name": "WUPPERTAL",
+      "reference": "104"
+    },
+    {
+      "student_code": "105",
+      "full_name": "AYA ZAHIR",
+      "class_name": "WUPPERTAL",
+      "reference": "105"
+    },
+    {
+      "student_code": "106",
+      "full_name": "AYA EL OUAZZANI",
+      "class_name": "WUPPERTAL",
+      "reference": "106"
+    },
+    {
+      "student_code": "107",
+      "full_name": "HAMZA ZERBANE",
+      "class_name": "WUPPERTAL",
+      "reference": "107"
+    },
+    {
+      "student_code": "108",
+      "full_name": "MARIAM LAHBALI",
+      "class_name": "WUPPERTAL",
+      "reference": "108"
+    },
+    {
+      "student_code": "109",
+      "full_name": "DOHA QASSOUH",
+      "class_name": "WUPPERTAL",
+      "reference": "109"
+    },
+    {
+      "student_code": "110",
+      "full_name": "HAITAM LAGHZAOUI",
+      "class_name": "WUPPERTAL",
+      "reference": "110"
+    },
+    {
+      "student_code": "111",
+      "full_name": "ABDELHAMID BEN DAOUD",
+      "class_name": "WUPPERTAL",
+      "reference": "111"
+    },
+    {
+      "student_code": "112",
+      "full_name": "YASSINE CHAHIB",
+      "class_name": "KONSTANZ",
+      "reference": "112"
+    },
+    {
+      "student_code": "113",
+      "full_name": "YAKOUT FALIH",
+      "class_name": "KONSTANZ",
+      "reference": "113"
+    },
+    {
+      "student_code": "114",
+      "full_name": "ZINEB ELMAAROUFI",
+      "class_name": "KONSTANZ",
+      "reference": "114"
+    },
+    {
+      "student_code": "115",
+      "full_name": "ALAE RAY",
+      "class_name": "KONSTANZ",
+      "reference": "115"
+    },
+    {
+      "student_code": "116",
+      "full_name": "IMANE AGOUNI",
+      "class_name": "KONSTANZ",
+      "reference": "116"
+    },
+    {
+      "student_code": "117",
+      "full_name": "IMANE ELMIR",
+      "class_name": "KONSTANZ",
+      "reference": "117"
+    },
+    {
+      "student_code": "118",
+      "full_name": "ILHAM BENSLIMAN",
+      "class_name": "KONSTANZ",
+      "reference": "118"
+    },
+    {
+      "student_code": "119",
+      "full_name": "ILYASS ALAOUI",
+      "class_name": "KONSTANZ",
+      "reference": "119"
+    },
+    {
+      "student_code": "120",
+      "full_name": "YASSIR EL AIDOUNI",
+      "class_name": "KONSTANZ",
+      "reference": "120"
+    },
+    {
+      "student_code": "121",
+      "full_name": "ZAINAB LAYADI",
+      "class_name": "KONSTANZ",
+      "reference": "121"
+    },
+    {
+      "student_code": "122",
+      "full_name": "ANASS IZBAD",
+      "class_name": "KONSTANZ",
+      "reference": "122"
+    },
+    {
+      "student_code": "123",
+      "full_name": "AMINA BADREDINE",
+      "class_name": "KONSTANZ",
+      "reference": "123"
+    },
+    {
+      "student_code": "124",
+      "full_name": "IMANE BOUCHAHMA",
+      "class_name": "KONSTANZ",
+      "reference": "124"
+    },
+    {
+      "student_code": "125",
+      "full_name": "ILHAM AJDI",
+      "class_name": "KONSTANZ",
+      "reference": "125"
+    },
+    {
+      "student_code": "126",
+      "full_name": "IKRAM AIT HMITTI",
+      "class_name": "KONSTANZ",
+      "reference": "126"
+    },
+    {
+      "student_code": "127",
+      "full_name": "MOHAMED JERRARI",
+      "class_name": "INGOLSTADT",
+      "reference": "127"
+    },
+    {
+      "student_code": "128",
+      "full_name": "MOHAMED-AMINE AZALLAD",
+      "class_name": "INGOLSTADT",
+      "reference": "128"
+    },
+    {
+      "student_code": "129",
+      "full_name": "KHADIJA ETTANJI",
+      "class_name": "INGOLSTADT",
+      "reference": "129"
+    },
+    {
+      "student_code": "130",
+      "full_name": "HANANE MARHDI",
+      "class_name": "INGOLSTADT",
+      "reference": "130"
+    },
+    {
+      "student_code": "131",
+      "full_name": "MASSAB EL JID",
+      "class_name": "INGOLSTADT",
+      "reference": "131"
+    },
+    {
+      "student_code": "132",
+      "full_name": "OUSSAMA EL QECHAIAA",
+      "class_name": "INGOLSTADT",
+      "reference": "132"
+    },
+    {
+      "student_code": "133",
+      "full_name": "MOHAMED ADAM EL MANSOUM",
+      "class_name": "INGOLSTADT",
+      "reference": "133"
+    },
+    {
+      "student_code": "134",
+      "full_name": "KAOUTAR BOUIBAOUN",
+      "class_name": "INGOLSTADT",
+      "reference": "134"
+    },
+    {
+      "student_code": "135",
+      "full_name": "LAILA LAKHLIFI",
+      "class_name": "INGOLSTADT",
+      "reference": "135"
+    },
+    {
+      "student_code": "136",
+      "full_name": "HANAA FELLAHI",
+      "class_name": "INGOLSTADT",
+      "reference": "136"
+    },
+    {
+      "student_code": "137",
+      "full_name": "MOUHSSINE TAGHLAOUI",
+      "class_name": "INGOLSTADT",
+      "reference": "137"
+    },
+    {
+      "student_code": "138",
+      "full_name": "HIBA AAMIRI",
+      "class_name": "INGOLSTADT",
+      "reference": "138"
+    }
+  ]
+}

@@ -1,9 +1,9 @@
-{{-- resources/views/convocations/pdf.blade.php --}}
 <!doctype html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
-    <title>Convocation - {{ $student->student_code }}</title>
+    <title>Convocation Examen - GLS Sprachenzentrum</title>
     <style>
         :root {
             --primary-color: #1a365d;
@@ -13,9 +13,13 @@
             --text-main: #1e293b;
         }
 
-        @page { size: A4; margin: 0; }
+        @page {
+            size: A4;
+            margin: 0;
+        }
 
         body {
+            background: #e5e7eb;
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -27,11 +31,24 @@
         .page {
             width: 210mm;
             min-height: 297mm;
-            padding: 25mm 20mm;
+            margin: 20mm auto;
+            background: #ffffff;
+            padding: 25mm 20mm 32mm;
+            /* ✅ reserve espace en bas pour le footer */
             box-sizing: border-box;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             position: relative;
-            display: flex;
-            flex-direction: column;
+        }
+
+        @media print {
+            body {
+                background: none;
+            }
+
+            .page {
+                margin: 0;
+                box-shadow: none;
+            }
         }
 
         .header {
@@ -55,8 +72,14 @@
             color: var(--secondary-color);
         }
 
-        .date-ref span { display:block; margin-bottom:4px; }
-        .date-ref strong { color: var(--text-main); }
+        .date-ref span {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .date-ref strong {
+            color: var(--text-main);
+        }
 
         .address-section {
             display: flex;
@@ -65,7 +88,10 @@
             font-size: 14px;
         }
 
-        .school-info { color: var(--secondary-color); }
+        .school-info {
+            color: var(--secondary-color);
+        }
+
         .school-info strong {
             font-size: 16px;
             color: var(--primary-color);
@@ -79,20 +105,8 @@
             padding-right: 15px;
         }
 
-        .recipient-info strong { font-size: 15px; }
-
-        .subject {
-            background: var(--bg-gray);
-            border-left: 5px solid var(--primary-color);
-            padding: 15px 20px;
-            margin-bottom: 30px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .subject strong {
+        .recipient-info strong {
             font-size: 15px;
-            color: var(--primary-color);
         }
 
         .letter-content p {
@@ -108,12 +122,22 @@
             overflow: hidden;
         }
 
-        table { width:100%; border-collapse:collapse; font-size:14px; }
-        td { padding:14px 18px; border-bottom:1px solid var(--border-color); }
+        .details table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
 
-        tr:last-child td { border-bottom:none; }
+        .details td {
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border-color);
+        }
 
-        td:first-child {
+        .details tr:last-child td {
+            border-bottom: none;
+        }
+
+        .details td:first-child {
             width: 30%;
             background: var(--bg-gray);
             font-weight: 600;
@@ -122,35 +146,23 @@
             font-size: 12px;
         }
 
-        td:last-child { color: var(--text-main); font-weight: 500; }
-
-        .instructions {
-            margin-top: 30px;
-            padding: 20px;
-            background: #fff;
-            border: 1px dashed var(--border-color);
+        .details td:last-child {
+            color: var(--text-main);
+            font-weight: 600;
         }
-
-        .instructions strong {
-            display: block;
-            margin-bottom: 10px;
-            color: var(--primary-color);
-            text-decoration: underline;
-        }
-
-        .instructions ul { margin:0; padding-left:20px; }
-        .instructions li { margin-bottom:8px; font-size:14px; }
 
         .signature-wrapper {
-            margin-top: auto;
-            padding-top: 40px;
+            margin-top: 40px;
             display: flex;
             justify-content: flex-end;
             gap: 22px;
             align-items: flex-end;
         }
 
-        .signature { text-align:center; width:250px; }
+        .signature {
+            text-align: center;
+            width: 250px;
+        }
 
         .signature-line {
             border-top: 1px solid var(--text-main);
@@ -168,120 +180,137 @@
             border-radius: 10px;
         }
 
+        /* ✅ Footer fixé en bas (toujours visible sur la page) */
         .footer {
-            margin-top: 40px;
+            position: absolute;
+            left: 20mm;
+            right: 20mm;
+            bottom: 12mm;
             font-size: 11px;
             color: #94a3b8;
             text-align: center;
             border-top: 1px solid var(--border-color);
-            padding-top: 15px;
+            padding-top: 10px;
             font-style: italic;
+            line-height: 1.35;
+        }
+
+        /* ✅ Un peu d’air entre les 2 lignes */
+        .footer .line {
+            display: block;
+            margin-top: 3px;
         }
     </style>
 </head>
 
 <body>
-<div class="page">
 
-    <div class="header">
-        <div class="logo">
-            {{-- IMPORTANT: mets ton logo dans public/assets/images/logo/gls.png --}}
-            <img src="{{ public_path('assets/images/logo/gls.png') }}" alt="GLS Logo">
+    <div class="page">
+
+        <div class="header">
+            <div class="logo">
+                <img src="{{ public_path('assets/logo/gls-noir.png') }}" alt="GLS Logo">
+            </div>
+
+            <div class="date-ref">
+                <span>Date : <strong>16-17 février 2026</strong></span>
+                <span>
+                    Classe :
+                    <strong>
+                        {{ is_array($student) ? $student['class_name'] ?? '-' : $student->class_name ?? '-' }}
+                    </strong>
+                </span>
+            </div>
+
         </div>
 
-        <div class="date-ref">
-            <span>Date : <strong>{{ optional($student->letter_date)->format('d F Y') ?? now()->format('d F Y') }}</strong></span>
-            <span>Référence : <strong>{{ $student->reference ?? 'GLS-EX-2026-A2' }}</strong></span>
+        <div class="address-section">
+            <div class="school-info">
+                <strong>GLS Sprachenzentrum</strong>
+                Centre Marrakech<br>
+                3ème étage Bureau 28, Immeuble Espace,<br>
+                Av. Yacoub El Mansour, Marrakesh 40000<br>
+                Maroc
+            </div>
+
+            <div class="recipient-info">
+                À l’attention de :<br>
+                <strong>
+                    {{ is_array($student) ? $student['full_name'] ?? '-' : $student->full_name ?? '-' }}
+                </strong><br>
+
+                Identifiant étudiant :
+                <strong>
+                    {{ is_array($student) ? $student['student_code'] ?? '-' : $student->student_code ?? '-' }}
+                </strong>
+            </div>
+
         </div>
-    </div>
 
-    <div class="address-section">
-        <div class="school-info">
-            <strong>GLS Sprachenzentrum</strong>
-            {{ $student->center_name ?? 'Centre Marrakech' }}<br>
-            {!! $student->address_block ?? '3ème étage Bureau 28, Immeuble Espace,<br>Av. Yacoub El Mansour, Marrakesh 40000<br>Maroc' !!}
+        <div class="letter-content">
+            <p>Madame, Monsieur,</p>
+
+            <p>
+                Par la présente, nous vous informons que vous êtes officiellement convoqué(e) pour vous présenter à
+                l’examen suivant organisé par <strong>GLS Sprachenzentrum</strong>.
+                Veuillez prendre connaissance des informations ci-dessous et respecter strictement les consignes.
+            </p>
         </div>
 
-        <div class="recipient-info">
-            À l’attention de :<br>
-            <strong>{{ $student->full_name }}</strong><br>
-            Identifiant étudiant : <strong>{{ $student->student_code }}</strong>
-        </div>
-    </div>
+        <div class="details-container">
+            <div class="details">
+                <table>
+                    <tr>
+                        <td>Niveau</td>
+                        <td>A2</td>
+                    </tr>
 
-    <div class="subject">
-        <strong>Objet : Convocation à l’examen Goethe-Zertifikat {{ $student->level ?? 'A2' }}</strong>
-    </div>
+                    <!-- ✅ NOUVELLE LIGNE : student_code -->
+                    <tr>
+                        <td>Classe Et Numero Table</td>
+                        <td>
+                            Classe
+                            {{ is_array($student) ? $student['class_name'] ?? '-' : $student->class_name ?? '-' }}
+                            —
+                            {{ is_array($student) ? $student['student_code'] ?? '-' : $student->student_code ?? '-' }}
 
-    <div class="letter-content">
-        <p>Madame, Monsieur,</p>
+                        </td>
+                    </tr>
 
-        <p>
-            Par la présente, nous vous informons que vous êtes officiellement convoqué(e) pour vous présenter à
-            l’examen organisé par <strong>GLS Sprachenzentrum</strong>.
-            Veuillez prendre connaissance des informations ci-dessous et respecter strictement les consignes.
-        </p>
-    </div>
-
-    <div class="details-container">
-        <table>
-            <tr>
-                <td>Niveau</td>
-                <td>{{ $student->level ?? 'A2' }}</td>
-            </tr>
-            <tr>
-                <td>Classe</td>
-                <td>{{ $student->class_name ?? '-' }}</td>
-            </tr>
-            <tr>
-                <td>Date(s) de l’examen</td>
-                <td>{{ $student->exam_dates ?? '16 - 17 février 2026' }}</td>
-            </tr>
-            <tr>
-                <td>Heure</td>
-                <td>{{ $student->exam_time ?? '18h00 - 21h30' }}</td>
-            </tr>
-            <tr>
-                <td>Lieu</td>
-                <td>
-                    GLS Sprachenzentrum – {{ $student->center_name ?? 'Centre Marrakech' }}<br>
-                    {!! $student->address_block ?? '3ème étage Bureau 28, Immeuble Espace,<br>Av. Yacoub El Mansour, Marrakesh 40000<br>Maroc' !!}
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <div class="instructions">
-        <strong>Instructions importantes :</strong>
-        <ul>
-            <li>Se présenter 30 minutes avant l’heure prévue.</li>
-            <li>Apporter une pièce d’identité valide (Carte Nationale ou Passeport).</li>
-            <li>Les téléphones portables et tout appareil électronique sont strictement interdits dans la salle d’examen.</li>
-            <li>Tout retard pourra entraîner un refus d’accès à l’examen.</li>
-            <li>Respecter le règlement intérieur du centre.</li>
-        </ul>
-    </div>
-
-    <p style="margin-top:25px; font-size: 15px;">
-        Nous vous souhaitons pleine réussite pour cet examen.
-    </p>
-
-    <div class="signature-wrapper">
-        <div class="signature">
-            <div class="signature-line">
-                Administration<br>
-                GLS Sprachenzentrum
+                    <tr>
+                        <td>Date(s) de l’examen</td>
+                        <td>16 - 17 février 2026</td>
+                    </tr>
+                    <tr>
+                        <td>Heure</td>
+                        <td>18h00 - 21h30</td>
+                    </tr>
+                </table>
             </div>
         </div>
 
-        <div class="stamp-box"></div>
+        <p style="margin-top:25px; font-size:15px;">
+            Nous vous souhaitons pleine réussite pour cet examen.
+        </p>
+
+        <div class="signature-wrapper">
+            <div class="signature">
+                <div class="signature-line">
+                    Administration<br>
+                    GLS Sprachenzentrum
+                </div>
+            </div>
+
+            <div class="stamp-box"></div>
+        </div>
+
+        <div class="footer">
+            <span>Document officiel – GLS Sprachenzentrum – Centre Marrakech</span>
+            <span class="line">Ce document est valable sans modification.</span>
+        </div>
+
     </div>
 
-    <div class="footer">
-        Document officiel – GLS Sprachenzentrum – {{ $student->center_name ?? 'Centre Marrakech' }}<br>
-        Ce document est valable sans modification.
-    </div>
-
-</div>
 </body>
+
 </html>

@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\ExamStudent;
-use Barryvdh\DomPDF\Facade\Pdf;
+use App\Services\ConvocationPdfService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Storage;
 
 class ExamConvocationController extends Controller
 {
@@ -63,42 +62,12 @@ class ExamConvocationController extends Controller
     }
 
     public function exportPdf(ExamStudent $student)
-    {
-        $pdf = Pdf::loadView('convocations.pdf', compact('student'))->setPaper('a4');
+{
+    $pdfPath = app(ConvocationPdfService::class)->generate($student);
 
-        return $pdf->download('convocation_'.$student->student_code.'.pdf');
-    }
+    return response()
+        ->download($pdfPath, 'convocation_' . $student->student_code . '.pdf')
+        ->deleteFileAfterSend(true);
+}
 
-    public function exportZip()
-    {
-        $students = ExamStudent::query()->orderBy('full_name')->get();
-
-        $tmpDir = 'tmp/convocations_'.now()->format('Ymd_His');
-        Storage::disk('local')->makeDirectory($tmpDir);
-
-        foreach ($students as $student) {
-            $pdf = Pdf::loadView('convocations.pdf', compact('student'))->setPaper('a4');
-
-            Storage::disk('local')->put(
-                $tmpDir.'/convocation_'.$student->student_code.'.pdf',
-                $pdf->output()
-            );
-        }
-
-        $zipName = 'convocations_A2_'.now()->format('Ymd_His').'.zip';
-        $zipPath = storage_path('app/'.$zipName);
-
-        $zip = new \ZipArchive();
-        $zip->open($zipPath, \ZipArchive::CREATE | \ZipArchive::OVERWRITE);
-
-        foreach (Storage::disk('local')->files($tmpDir) as $file) {
-            $zip->addFile(storage_path('app/'.$file), basename($file));
-        }
-
-        $zip->close();
-
-        Storage::disk('local')->deleteDirectory($tmpDir);
-
-        return response()->download($zipPath)->deleteFileAfterSend(true);
-    }
 }
