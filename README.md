@@ -4,7 +4,7 @@
 
 ![Laravel](https://img.shields.io/badge/Laravel-12.0-FF2D20?logo=laravel&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?logo=php&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite&logoColor=white)
+![Mysql](https://img.shields.io/badge/MySQL-Database-003B57?logo=mysql&logoColor=white)
 ![PDF](https://img.shields.io/badge/PDF-Browsershot-FF6B6B?logo=adobe&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
@@ -39,7 +39,7 @@ Perfect for educational institutions that need to send official exam invitations
 
 ✅ **Student Management**
 
-- Store student convocation data in SQLite database
+- Store student convocation data in MySql database
 - Pagination support (30 students per page)
 - Search & filter by name, student code, class, or reference
 - Unique student code enforcement
@@ -81,7 +81,7 @@ Perfect for educational institutions that need to send official exam invitations
 
 - **Framework**: Laravel 12.0
 - **Language**: PHP 8.2+
-- **Database**: SQLite (lightweight, file-based)
+- **Database**: MySql (lightweight, file-based)
 - **PDF Generation**: Spatie Browsershot (Chrome/Chromium-based)
 - **Server**: Laravel Development Server
 
@@ -146,7 +146,7 @@ cp .env.example .env
 # Generate application key
 php artisan key:generate
 
-# Create SQLite database
+# Create MySql database
 php artisan migrate --force
 ```
 
@@ -190,9 +190,9 @@ APP_ENV=local
 APP_DEBUG=true
 APP_URL=http://localhost:8000
 
-# Database (SQLite)
-DB_CONNECTION=sqlite
-DB_DATABASE=database/database.sqlite
+# Database (MySql)
+DB_CONNECTION=MySql
+DB_DATABASE=database/database.MySql
 
 # Queue Configuration
 QUEUE_CONNECTION=sync
@@ -400,8 +400,8 @@ public function exportAllPdf()      // Bulk PDF export
 ### Database Configuration (`config/database.php`)
 
 ```php
-'default' => env('DB_CONNECTION', 'sqlite')
-'database' => env('DB_DATABASE', database_path('database.sqlite'))
+'default' => env('DB_CONNECTION', 'MySql')
+'database' => env('DB_DATABASE', database_path('database.MySql'))
 ```
 
 ### Queue Configuration (`config/queue.php`)
@@ -542,7 +542,7 @@ LOG_LEVEL=warning
 
 ### Server Requirements
 
-- PHP 8.2+ with `pdo`, `sqlite`, `gd`, `fileinfo`
+- PHP 8.2+ with `pdo`, `MySql`, `gd`, `fileinfo`
 - Web server: Apache, Nginx
 - Chrome/Chromium installed
 - 2GB+ RAM recommended
@@ -662,7 +662,6 @@ MIT License © 2026 GLS Sprachenzentrum
 For issues or questions:
 
 - **GitHub Issues**: [Create an issue](https://github.com/Rochdi7/gls-convocation/issues)
-- **Email**: contact@gls-marrakech.ma
 - **Documentation**: See project wiki
 
 ---
