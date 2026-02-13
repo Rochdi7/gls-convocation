@@ -200,7 +200,6 @@
                     <a class="btn2" href="{{ route('convocations.export_all_pdf', request()->query()) }}">
                         Exporter toutes les convocations (PDF)
                     </a>
-
                 </div>
             </div>
 
@@ -239,9 +238,11 @@
             <div class="footer-row">
                 <div>
                     <strong>Liste des étudiants</strong>
-                    <div class="muted">Total (page) : {{ $students->count() }} — Total (DB) : {{ $students->total() }}
+                    <div class="muted">
+                        Total (page) : {{ $students->count() }} — Total (DB) : {{ $students->total() }}
                     </div>
                 </div>
+
                 <div class="muted">
                     Niveau : <span class="badge">A2</span>
                     — Dates : <span class="badge">16 - 17 février 2026</span>
@@ -249,6 +250,24 @@
                     — Centre : <span class="badge">Centre Marrakech</span>
                 </div>
             </div>
+
+            {{-- SEARCH ON TABLE --}}
+            <form method="GET" action="{{ route('convocations.index') }}" style="margin-top:12px">
+                <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center">
+                    <input
+                        type="text"
+                        name="q"
+                        value="{{ request('q') }}"
+                        placeholder="Rechercher par nom ou code..."
+                        style="flex:1; min-width:240px; padding:10px 12px; border-radius:12px; border:1px solid #e5e7eb; font-size:14px; box-sizing:border-box;"
+                    />
+                    <button class="btn" type="submit">Rechercher</button>
+
+                    @if (request()->filled('q'))
+                        <a class="btn2" href="{{ route('convocations.index') }}">Réinitialiser</a>
+                    @endif
+                </div>
+            </form>
 
             <div style="overflow:auto;margin-top:12px;border:1px solid #eee;border-radius:12px">
                 <table>
@@ -275,7 +294,7 @@
                         @empty
                             <tr>
                                 <td colspan="5" class="muted" style="padding:16px">
-                                    Aucun étudiant pour le moment. Colle un JSON puis clique "Importer JSON".
+                                    Aucun étudiant trouvé.
                                 </td>
                             </tr>
                         @endforelse
@@ -284,7 +303,7 @@
             </div>
 
             <div style="margin-top:12px">
-                {{ $students->links() }}
+                {{ $students->withQueryString()->links() }}
             </div>
         </div>
 

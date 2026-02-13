@@ -827,6 +827,60 @@
       "full_name": "HIBA AAMIRI",
       "class_name": "INGOLSTADT",
       "reference": "138"
+    },
+    {
+      "student_code": "139",
+      "full_name": "OUAHIB EDDOURAIRI",
+      "class_name": "A2",
+      "reference": "139"
+    },
+    {
+      "student_code": "140",
+      "full_name": "HIBA BATATA",
+      "class_name": "KONSTANZ",
+      "reference": "140"
+    },
+    {
+      "student_code": "141",
+      "full_name": "RIDA SAKIB",
+      "class_name": "INGOLSTADT",
+      "reference": "141"
+    },
+    {
+      "student_code": "142",
+      "full_name": "BOUCHAIB ELMELSSE",
+      "class_name": "DARMSTADT",
+      "reference": "142"
+    },
+    {
+      "student_code": "143",
+      "full_name": "SARA AISSAOUI",
+      "class_name": "A3",
+      "reference": "143"
+    },
+    {
+      "student_code": "144",
+      "full_name": "AYOUB AIT STIMAH",
+      "class_name": "WUPPERTAL",
+      "reference": "144"
+    },
+    {
+      "student_code": "145",
+      "full_name": "HIBA DIYANI",
+      "class_name": "A1",
+      "reference": "145"
+    },
+    {
+      "student_code": "146",
+      "full_name": "DOUAA YASSINE",
+      "class_name": "INGOLSTADT",
+      "reference": "146"
+    },
+    {
+      "student_code": "147",
+      "full_name": "MOHAMED ER-ROUNDI",
+      "class_name": "A1",
+      "reference": "147"
     }
   ]
 }
